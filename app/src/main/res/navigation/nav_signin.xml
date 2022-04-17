@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_signin"
+    app:startDestination="@id/fullNameFragment">
+
+    <fragment
+        android:id="@+id/fullNameFragment"
+        android:name="com.example.lehaitrieu_19dh111098.FullnameFragment"
+        android:label="fragment_full_name"
+        tools:layout="@layout/fragment_fullname" >
+        <action
+            android:id="@+id/action_fullNameFragment_to_addressFragment"
+            app:destination="@id/addressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.example.lehaitrieu_19dh111098.AddressFragment"
+        android:label="fragment_address"
+        tools:layout="@layout/fragment_address" >
+        <action
+            android:id="@+id/action_addressFragment_to_usernamePasswordFragment"
+            app:destination="@id/usernamePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usernamePasswordFragment"
+        android:name="com.example.lehaitrieu_19dh111098.UserNamePasswordFragment"
+        android:label="fragment_username_password"
+        tools:layout="@layout/fragment_user_name_password" />
+</navigation>

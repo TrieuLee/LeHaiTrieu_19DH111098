@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "812301603258",
+    "project_id": "lehaitrieu-19dh111098",
+    "storage_bucket": "lehaitrieu-19dh111098.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812301603258:android:44e4ce3c1182d1b767cd83",
+        "android_client_info": {
+          "package_name": "com.example.lehaitrieu_19dh111098"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812301603258-p1a9rg6megieo1ug0cq039ol6tldo65o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCs5O9eMhREcTF0IqfnH0aFwhqJ3TNHUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812301603258-p1a9rg6megieo1ug0cq039ol6tldo65o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

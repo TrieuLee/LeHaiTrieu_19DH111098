@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Restaurant"
+        android:id="@+id/mnuRestaurant"/>
+    <item android:title="Top Restaurant"
+        android:id="@+id/mnuTRestaurant"/>
+    <item android:title="Top Food"
+        android:id="@+id/mnuTFood"/>
+</menu>

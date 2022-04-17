@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:id="@+id/foody_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:gravity="center_horizontal|top"
+        android:text="FoodyApp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/furniture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foody_app"
+        android:layout_alignStart="@+id/foody_app"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|top"
+        android:text="Instant Food Delivery"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/qwte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/furniture"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/icon_email" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/furniture"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:padding="18dp"
+            android:textAllCaps="false"
+            android:textColorHint="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/qwte2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qwte"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/icon_lock" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/furniture"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:padding="18dp"
+            android:textColorHint="@color/colorPrimary" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/text_forgot"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sign"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/qwte2">
+        <FrameLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@color/colorPrimary"
+                android:text="@string/text_sign_in"
+                android:textColor="#FFFFFF" />
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_marginLeft="4dp"
+            android:id="@+id/FrameLayout2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_green_border_button"
+                android:text="@string/text_sign_up"
+                android:textColor="@color/colorPrimary" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sign_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_sign"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/icon_facebook"
+        android:drawablePadding="5dp"
+        android:text="@string/text_sign_in_facebook"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_facebook"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/icon_google"
+        android:drawablePadding="5dp"
+        android:text="@string/text_sign_in_google"
+
+        android:textColor="@color/black" />
+
+
+    <ImageView
+        android:layout_width="146dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-34dp"
+        android:layout_marginBottom="-70dp"
+        android:src="@drawable/dish_2">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="171dp"
+        android:layout_height="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-29dp"
+        android:layout_marginEnd="-14dp"
+        android:src="@drawable/dish" />
+
+
+</RelativeLayout>

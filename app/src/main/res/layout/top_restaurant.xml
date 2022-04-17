@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="170dp"
+    android:id="@+id/layout_cells"
+    android:layout_height="245dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="200dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/relative_layout">
+
+        <ImageView
+            android:id="@+id/res_img"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/res_name"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/res_img"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="15dp"
+            android:singleLine="true"
+            android:text="Restaurant name"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/rateStar"
+            android:layout_width="77dp"
+            android:layout_height="18dp"
+            android:layout_below="@+id/res_name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="21dp"
+            android:drawableEnd="@drawable/ic_baseline_star_rate_24"
+            android:singleLine="true"
+            android:text="Rate"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

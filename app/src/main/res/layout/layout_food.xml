@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/smallSpace">
+
+    <ImageView
+        android:id="@+id/imgFood"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginRight="@dimen/mediumSpace"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tvFname"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="188dp"
+        android:layout_toRightOf="@id/imgFood"
+        android:text="Milk tea"
+
+        android:textSize="@dimen/largeFontSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFRate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="198dp"
+        android:layout_toRightOf="@id/imgFood"
+        android:text="Rate:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/mediumFontSize" />
+
+    <TextView
+        android:id="@+id/tvfprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="27dp"
+        android:text="59000"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>
