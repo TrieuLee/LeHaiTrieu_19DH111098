@@ -1,5 +1,6 @@
 package com.example.lehaitrieu_19dh111098;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -125,6 +126,8 @@ public class RestaurantFragment extends Fragment implements RestaurantAdapter.On
 
     @Override
     public void onRestaurantItemClick(Restaurant restaurant) {
-
+        Intent intent = new Intent(getContext(), RestaurantDetailActivity.class);
+        intent.putExtra("restaurant", restaurant);
+        startActivity(intent);
     }
 }
